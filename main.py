@@ -11,7 +11,7 @@ for line in lines:
     # get the distance and save it in dist_list as (line1,distance)
     dist_list.append(Intersect_Function.intersect_distance(angle, line))
 
-# filter None values from my list --> None values represent no intersect
+# filter None values from my dist_list --> None values represent no intersect
 print(dist_list)
 dist_list = list(filter(None, dist_list))
 
