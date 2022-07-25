@@ -21,18 +21,20 @@ you will see three files:
 3. test_app.py
 
 lets go in every file and we will start with the the function file
-1. Intersect_Function.py 
-        - we are having here the origin point which is (0,0) and i called point0.
-        - and 1ine which consist of two points, line1 = {point1,point2}.
-        - then the x and y for each point.
-        - angle in degrees
-    these things are give, from it we can get the intersect between origin line and line segment 
-    then calculate the distance between intersect point and origin point to find later the min distance
-    this function should take angle in degrees as int, ex: 45 and line as set, ex: {(1,-1),(1,1)} and
-    return a tuple consist of two points and the distance between origin point and line segment  like ({(1, 1), (1, -1)}, 1.41)
-    that output means the distance between line1 and origin point will equal to 1.41 when the angle = 45
-    then we will go to  main.py
-2. main.py
+1. Intersect_Function.py:
+
+        1.  we are having here the origin point which is (0,0) and i called point0.
+        2.  and 1ine which consist of two points, line1 = {point1,point2}.
+        3.  then the x and y for each point.
+        4.  angle in degrees
+     1. these things are give, from it we can get the intersect between origin line and line segment 
+     2. then calculate the distance between intersect point and origin point to find later the min distance
+     3.  this function should take angle in degrees as int, ex: 45 and line as set, ex: {(1,-1),(1,1)} and
+     4.  return a tuple consist of two points and the distance between origin point and line segment  like ({(1, 1), (1, -1)}, 1.41)
+     5.  that output means the distance between line1 and origin point will equal to 1.41 when the angle = 45
+     6.  then we will go to  main.py
+2. main.py:
+
         - in the main file we will define many line segments, for example: line_1 = {(1, -1), (1, 1)}, line_2 = {(2, -1), (2, 1)}
         - then we will puts these lines inside a list, for example: lines = [line_1, line_2, line_3]
         - then we will iterate through the lines and pass each line to the intersec_distance function
