@@ -33,6 +33,7 @@ lets go in every file and we will start with the the function file
      4.  return a tuple consist of two points and the distance between origin point and line segment  like ({(1, 1), (1, -1)}, 1.41)
      5.  that output means the distance between line1 and origin point will equal to 1.41 when the angle = 45
      6.  then we will go to  main.py
+     
 2. main.py:
 
         - in the main file we will define many line segments, for example: line_1 = {(1, -1), (1, 1)}, line_2 = {(2, -1), (2, 1)}
@@ -42,6 +43,12 @@ lets go in every file and we will start with the the function file
         - we will put the out put in a list called dist_list then print the closest line segment 
           using this line of code: print(min(dist_list, key=lambda t: t[1]))
         - now we got our closest line to the point of origin when the angle equal 45
+
+3. test_app.py:
+
+        - we will use unittest to make sure that the output of the function is equal to the correct out put
+        - will we do that using self.assertEqual(output_of_the_function, right_value)
+        - if they are the same the test will give me Ok
         
  
 
