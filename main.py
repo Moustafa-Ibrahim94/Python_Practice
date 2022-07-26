@@ -16,5 +16,8 @@ print(dist_list)
 dist_list = list(filter(None, dist_list))
 
 # then print the closest line segment
-print(min(dist_list, key=lambda t: t[1])[0])
-# Output = {(1, 1), (1, -1)}
+if len(dist_list) == 0:
+    print("No Intersections")
+else:
+    print(min(dist_list, key=lambda t: t[1])[0])
+    # Output = {(1, 1), (1, -1)}
