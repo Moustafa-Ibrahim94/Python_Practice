@@ -34,7 +34,7 @@ def intersect_distance(angle1: int, line1: set) -> tuple[set, float] | None:
 
         # find the intersection of two straight lines
         xi = round((b1 - b2) / (m2 - m1), 2)
-        yi = round(m1 * xi + b1, 2)
+        yi = round(m2 * xi + b2, 2)
 
         # checking if intersect point is the line limit
         if min([x1, x2]) <= xi <= max([x1, x2]):
@@ -42,6 +42,10 @@ def intersect_distance(angle1: int, line1: set) -> tuple[set, float] | None:
             d = round(math.dist(point0, intersect_point), 2)
             return line1, d
             # ("In Range") Accept intersect point
+             # parallel to the y-axis case
+                
+        elif (x2 - x1 == 0) and (angle == 90):
+            return
         else:
             return None
             # ("Not in the Range") Not Accept intersect point
