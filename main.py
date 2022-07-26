@@ -1,11 +1,11 @@
 import Intersect_Function
 
-line_1 = {(1, -1), (1, 1)}
-line_2 = {(2, -1), (2, 1)}
+line_1: set = {(1, -1), (1, 1)}
+line_2: set  = {(2, -1), (2, 1)}
 
-lines = [line_1, line_2]
-angle = 0
-dist_list = []
+lines: list = [line_1, line_2]
+angle: int = 0
+dist_list: list = []
 # iterate through every line
 for line in lines:
     # get the distance and save it in dist_list as (line1,distance)
